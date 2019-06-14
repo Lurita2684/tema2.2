@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColorActivity">
+
+
+
+
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+
+        <RadioGroup
+            android:id="@+id/radiogr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgView">
+
+            <TextView
+                android:id="@+id/textintensidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INTENSIDAD" />
+
+            <RadioButton
+                android:id="@+id/radiouno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textintensidad"
+                android:text="SUAVE"
+                android:textColor="@color/design_default_color_primary"/>
+            <RadioButton
+                android:id="@+id/radiodos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radiouno"
+                android:text="FUERTE"
+                android:textColor="@color/design_default_color_primary"/>
+
+        </RadioGroup>
+
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingButton"
+        android:layout_width="53dp"
+        android:layout_height="63dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        tools:srcCompat="@android:drawable/ic_input_add"/>
+
+</RelativeLayout>
